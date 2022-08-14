@@ -7,7 +7,7 @@ class Highschools extends BaseModel {
 
     protected function postHighschool(string $name, string $description, string $location, string $image) {
         global $db;
-        $sql = "INSERT INTO `highschools` (`name`, `description`, `location`, `image`) VALUES ('$name', '$description', '$location', `$image`);";
+        $sql = "INSERT INTO `highschools` (`name`, `description`, `location`, `image`) VALUES ('$name', '$description', '$location', '$image');";
         
         $stmnt = $db->prepare($sql);
         $stmnt->execute();
@@ -15,10 +15,10 @@ class Highschools extends BaseModel {
         return $stmnt->fetchObject();
     } 
 
-    protected function updateHighschool(string $name, string $description, string $location) {
+    protected function updateHighschool(int $highschool_id, string $name, string $description, string $location, string $image) {
         global $db;
 
-        $sql = "UPDATE `highschools` SET `name` = '$name', `description` = '$description', `location` = '$location' WHERE `highschools`.`highschool_id` = '$highschool_id'";
+        $sql = "UPDATE `highschools` SET `name` = '$name', `description` = '$description', `location` = '$location', `image` = '$image' WHERE `highschools`.`highschool_id` = '$highschool_id'";
         
         $stmnt = $db->prepare($sql);
         $stmnt->execute();
