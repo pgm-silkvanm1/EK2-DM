@@ -3,10 +3,17 @@
 
 
 
+
+
 <? foreach ($highschools as $highschool){
     ?>
     <p><?= $highschool['name'] ?></p>
-    <p><?= $highschool['description'] ?></p> <?
+    <p><?= $highschool['description'] ?></p> 
+    <form method="POST">
+        <button type="submit" name="delete" value="<?=$highschool['highschool_id'] ?>">DELETE</button>
+    </form>
+    <?
+
 }
 
 ?>

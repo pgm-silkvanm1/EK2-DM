@@ -27,6 +27,12 @@ class AdminController extends BaseController {
                     // Highschools::postHighschool($file_name, 'image', $description);
             }
         }
+
+        if (isset($_POST['delete'])) {
+            $this->id = $_POST['delete'];
+
+            Highschools::deleteHighschool($this->id);
+        }
         
     }
 }

@@ -27,7 +27,7 @@ class Highschools extends BaseModel {
     }
 
 
-    protected function deleteHighschool (int $highscool_id) {
+    protected function deleteHighschool (int $highschool_id) {
         global $db;
 
         $sql = "DELETE FROM `highschools` WHERE `highschools`.`highschool_id` = $highschool_id";
