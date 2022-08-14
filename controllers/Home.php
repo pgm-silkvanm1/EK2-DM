@@ -16,7 +16,7 @@ class HomeController extends BaseController {
 
     protected function search ($params) {
         $this->viewParams['search'] = Highschools::getAllByName($params[0]);
-        
+
         $this->loadView();
     }
 }
