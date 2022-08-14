@@ -9,7 +9,7 @@ class HighschoolsController extends BaseController {
         $this->loadView();
     }
 
-    protected funstion search ($param){
-        $this->viewParams['']
+    protected function search ($params){
+        $this->viewParams[''];
     }
 }

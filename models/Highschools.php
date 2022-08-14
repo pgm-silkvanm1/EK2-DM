@@ -5,9 +5,9 @@ class Highschools extends BaseModel {
     protected $table = 'highschools';
     protected $pk = 'highschool_id';
 
-    protected function postHighschool(string $name, string $description, string $location) {
+    protected function postHighschool(string $name, string $description, string $location, string $image) {
         global $db;
-        $sql = "INSERT INTO `highschools` (`name`, `description`, `location`) VALUES ('$name', '$description', '$location');";
+        $sql = "INSERT INTO `highschools` (`name`, `description`, `location`, `image`) VALUES ('$name', '$description', '$location', `$image`);";
         
         $stmnt = $db->prepare($sql);
         $stmnt->execute();

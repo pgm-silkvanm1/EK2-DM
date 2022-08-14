@@ -4,7 +4,6 @@ class HomeController extends BaseController {
 
 
     protected function index () {
-   
         $this->loadView();
 
         if(isset($_GET['search'])) {
