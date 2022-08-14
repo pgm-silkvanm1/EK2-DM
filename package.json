@@ -1,0 +1,24 @@
+{
+  "name": "cakephp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watchsass": "sass --no-source-map --watch ./assets/scss/main.scss:./assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgm-silkvanm1/EK2-DM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgm-silkvanm1/EK2-DM/issues"
+  },
+  "homepage": "https://github.com/pgm-silkvanm1/EK2-DM#readme",
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
+}
