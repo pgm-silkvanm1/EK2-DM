@@ -4,6 +4,8 @@ class HomeController extends BaseController {
 
 
     protected function index () {
+        $this->viewParams['highschools'] = Highschools::getAll();
+        $this->viewParams['universities'] = Universities::getAll();
         $this->loadView();
 
         if(isset($_GET['search'])) {

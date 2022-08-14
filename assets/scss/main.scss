@@ -1,3 +1,79 @@
-body {
-  background-color: burlywood;
+.wrapper {
+  .add {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+    margin: 50px 0;
+
+    &__button {
+      background-color: blue;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+  }
+
+  .school {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px 20px 20px 10px;
+
+    .img__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      object-fit: cover;
+      border-right: 1px solid black;
+      text-align: center;
+      padding: 30px;
+
+      img {
+        width: 100px;
+      }
+    }
+    &__desc {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .strong {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+    .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      margin-right: 20px;
+
+      &__update {
+        background-color: blue;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      &__danger {
+        background-color: red;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: none;
+      }
+    }
+  }
 }
