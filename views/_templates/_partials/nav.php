@@ -8,8 +8,8 @@
     <a href="/">Home</a>
     <a href="/highschools">Hogescholen</a>
     <a href="/universities">Universiteiten</a>
-    <a href="/admin">Admin</a>
     <a href="/courses">Courses</a>
-
+    <a href="/search"><img class="search" src="<?=BASE_URL?>/assets/search.png" /></a>
+    <a href="/admin">Admin</a>
 
 </div>

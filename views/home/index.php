@@ -1,8 +1,3 @@
-<form method="GET" action="">
-	<input name="search" type="text">
-	<button type="submit">search</button>
-</form>
-
 <? foreach ($highschools as $highschool){
     ?>
     <div class="school">

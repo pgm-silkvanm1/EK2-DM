@@ -7,17 +7,16 @@ class HomeController extends BaseController {
         $this->viewParams['highschools'] = Highschools::getAll();
         $this->viewParams['universities'] = Universities::getAll();
         $this->loadView();
+    }
 
-        if(isset($_GET['search'])) {
-            $this->search = $_GET['search'];
+    protected function search () {
+
+        if(isset($_POST['search'])) {
+            $this->search = $_POST['search'];
 
             $results = Highschools::getAllByName($this->search);
             print_r($results);
         }
-    }
-
-    protected function search ($params) {
-        $this->viewParams['search'] = Highschools::getAllByName($params[0]);
 
         $this->loadView();
     }

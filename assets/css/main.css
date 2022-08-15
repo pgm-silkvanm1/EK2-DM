@@ -35,6 +35,10 @@ nav .nav__right a {
 nav .nav__right a:hover {
   color: blue;
 }
+nav .nav__right a .search {
+  width: 15px;
+  height: 15px;
+}
 
 .wrapper {
   padding: 20px;
