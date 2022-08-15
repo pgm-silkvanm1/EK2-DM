@@ -26,7 +26,6 @@ class Highschools extends BaseModel {
         return $stmnt->fetchObject();
     }
 
-
     protected function deleteHighschool (int $highschool_id) {
         global $db;
 

@@ -2,7 +2,6 @@
 
 class HighschoolsController extends BaseController {
 
-
     protected function index () {
     $this->viewParams['highschools'] = Highschools::getAll();
    
@@ -14,10 +13,5 @@ class HighschoolsController extends BaseController {
         $this->viewParams['highschool'] = Highschools::getById($params[0]);
 
         $this->loadView();
-
     }
-
-    // protected function search ($params){
-    //     $this->viewParams[''];
-    // }
 }

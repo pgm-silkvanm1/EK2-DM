@@ -8,8 +8,4 @@ class CoursesController extends BaseController {
    
         $this->loadView();
     }
-
-    // protected function search ($params){
-    //     $this->viewParams[''];
-    // }
 }

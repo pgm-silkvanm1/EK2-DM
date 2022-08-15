@@ -11,9 +11,7 @@
             <p class="red"><span class="red underline">Locatie:</span> <?= $highschool['location'] ?></p> 
         </div>
     </div>
-
     <?
-
 }
 
 foreach ($universities as $university){
@@ -29,9 +27,5 @@ foreach ($universities as $university){
         </div>
     </div>
     <?
-
 }
-
-
-
 ?>

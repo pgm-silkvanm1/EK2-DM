@@ -2,7 +2,6 @@
 
 class SearchController extends BaseController {
 
-
     protected function index () {
         
         if (isset($_POST['search'])) {

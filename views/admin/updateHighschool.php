@@ -1,7 +1,5 @@
 <h1>Update</h1>
 
-<? print_r($school)?>
-
 <form method="POST" enctype="multipart/form-data">
     <label> Naam:
         <input type="text" name="name">

@@ -7,10 +7,8 @@ class AdminController extends BaseController {
         $this->viewParams['universities'] = Universities::getAll();
         $this->viewParams['courses'] = Courses::getAll();
 
-
         $this->loadView();
 
-        
         if (isset($_POST['deletehs'])) {
             $this->id = $_POST['deletehs'];
             
@@ -53,8 +51,7 @@ class AdminController extends BaseController {
     
                 move_uploaded_file($tmp_file, './assets/img/'. $file_name);
                 
-                //TODO: change to uni of highschool
-                    Highschools::postHighschool($name, $description, $location, $file_name );
+                Highschools::postHighschool($name, $description, $location, $file_name );
             }
         }
     }
@@ -75,10 +72,6 @@ class AdminController extends BaseController {
             $file_name = $school->image;
 
             if (isset($_FILES['upload_file']) && $_FILES['upload_file']['size'] < 52428800) {
-        
-                // $name=$_POST['name'];
-                // $description=$_POST['description'];
-                // $location=$_POST['location'];
 
                 // alles komt in lowercase en het gedeelte na het punt vergeleken met de allowedextensions            
                 if (in_array(strtolower(pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION)), $allowedExtensions)) {
@@ -93,7 +86,6 @@ class AdminController extends BaseController {
                     move_uploaded_file($tmp_file, './assets/img/'. $file_name);
                 }
             }
-
             Highschools::updateHighschool($params[0], $name, $description, $location, $file_name );
         }
     }
@@ -144,10 +136,6 @@ class AdminController extends BaseController {
             $file_name = $school->image;
 
             if (isset($_FILES['upload_file']) && $_FILES['upload_file']['size'] < 52428800) {
-        
-                // $name=$_POST['name'];
-                // $description=$_POST['description'];
-                // $location=$_POST['location'];
 
                 // alles komt in lowercase en het gedeelte na het punt vergeleken met de allowedextensions            
                 if (in_array(strtolower(pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION)), $allowedExtensions)) {
@@ -162,7 +150,6 @@ class AdminController extends BaseController {
                     move_uploaded_file($tmp_file, './assets/img/'. $file_name);
                 }
             }
-
             Universities::updateUniversity($params[0], $name, $description, $location, $file_name );
         }
     }
@@ -190,7 +177,6 @@ class AdminController extends BaseController {
     
                 move_uploaded_file($tmp_file, './assets/img/'. $file_name);
                 
-                //TODO: change to uni of highschool
                 Courses::postCourses($name, $description, $duration, $file_name );
             }
         }
@@ -212,10 +198,6 @@ class AdminController extends BaseController {
             $file_name = $course->image;
 
             if (isset($_FILES['upload_file']) && $_FILES['upload_file']['size'] < 52428800) {
-        
-                // $name=$_POST['name'];
-                // $description=$_POST['description'];
-                // $location=$_POST['location'];
 
                 // alles komt in lowercase en het gedeelte na het punt vergeleken met de allowedextensions            
                 if (in_array(strtolower(pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION)), $allowedExtensions)) {
@@ -230,7 +212,6 @@ class AdminController extends BaseController {
                     move_uploaded_file($tmp_file, './assets/img/'. $file_name);
                 }
             }
-
             Courses::updateCourses($params[0], $name, $description, $duration, $file_name );
         }
     }

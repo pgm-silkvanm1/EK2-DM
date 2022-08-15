@@ -7,7 +7,6 @@
 
 </div>
 
-
 <div>
     <h2>
         Statistiek:
@@ -19,7 +18,6 @@
 <h2>
     Scholen:
 </h2>
-
 
 <? foreach ($highschools as $highschool){
     ?>
@@ -38,7 +36,6 @@
         </form>
     </div>
     <?
-
 }
 
 foreach ($universities as $university){
