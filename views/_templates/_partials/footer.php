@@ -1,3 +1,4 @@
 <div class="footer__inner">
-    <a href="/">home</a>
+    <a href="/">Home</a>
+    <a href="/admin">Admin</a>
 </div>

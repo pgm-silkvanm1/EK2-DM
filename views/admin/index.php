@@ -10,8 +10,8 @@
     <h2>
         Statistiek:
     </h2>
-    <p>Hoeveelheid hogescholen: <?=count($highschools)?></p>
-    <p>Hoeveelheid universiteiten: <?=count($universities)?></p>
+    <p>Hoeveelheid hogescholen: <strong><?=count($highschools)?></strong></p>
+    <p>Hoeveelheid universiteiten: <strong><?=count($universities)?></strong></p>
 </div>
 
 <h2>

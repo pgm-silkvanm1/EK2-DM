@@ -23,11 +23,9 @@
         <?= $content; ?>
     </main>
     <footer>
-        <div class="wrapper">
             <?php
                 include BASE_DIR . '/views/_templates/_partials/footer.php'
             ?>
-        </div>
     </footer>
 </body>
 </html>
