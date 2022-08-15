@@ -9,6 +9,7 @@
     <a href="/highschools">Hogescholen</a>
     <a href="/universities">Universiteiten</a>
     <a href="/admin">Admin</a>
+    <a href="/courses">Courses</a>
 
 
 </div>
