@@ -39,6 +39,9 @@ nav .nav__right a .search {
   width: 15px;
   height: 15px;
 }
+nav .nav__right .admin {
+  font-size: 0.7rem;
+}
 
 .wrapper {
   padding: 20px;

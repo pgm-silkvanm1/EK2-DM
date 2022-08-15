@@ -10,6 +10,6 @@
     <a href="/universities">Universiteiten</a>
     <a href="/courses">Courses</a>
     <a href="/search"><img class="search" src="<?=BASE_URL?>/assets/search.png" /></a>
-    <a href="/admin">Admin</a>
+    <a class="admin" href="/admin">Admin</a>
 
 </div>
