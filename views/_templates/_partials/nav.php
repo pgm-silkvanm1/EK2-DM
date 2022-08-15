@@ -6,6 +6,9 @@
 
 <div class="nav__right">
     <a href="/">Home</a>
+    <a href="/highschools">Hogescholen</a>
+    <a href="/universities">Universiteiten</a>
     <a href="/admin">Admin</a>
+
 
 </div>

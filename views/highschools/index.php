@@ -1,16 +1,16 @@
-<h1>index pagina van de highschool</h1>
-<a href="/">Home</a>
+<h1>Hogescholen</h1>
 
-<?php
-
-foreach ($highschools as $article) {
+<? foreach ($highschools as $highschool){
     ?>
-    <h2><?=$article["name"]?></h2>
-    <?php if ($article["description"]) {
-    ?>
-    <h2><?=$article["description"]?></h2>
-    <?php
-    }?>
-    <h2><?=$article["location"]?></h2>
-    <?php
-};
+    <div class="school">
+        <div class="img__container">
+            <img src="<?=BASE_URL?>/assets/img/<?=$highschool['image']?>" alt="" />
+        </div>
+        <div class="school__desc">
+            <p><?= $highschool['name'] ?></p>
+            <p><?= $highschool['description'] ?></p> 
+            <p><?= $highschool['location'] ?></p> 
+        </div>
+    </div>
+    <?
+} ?>
